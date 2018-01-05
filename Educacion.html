@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Resumen Curricular</title>
+    <title>Educación</title>
 </head>
 <body>
     <header>
@@ -27,7 +27,7 @@
          </g>
         </svg>
     </header>
-    <!-- Requerimiento2: Título -->
+  <!-- Requerimiento2: Título -->
     <h1>Resumen Curricular</h1>
     <h2>Edgar Llanque</h2>
     <!-- Requerimiento3: Datos Personales -->
@@ -40,7 +40,7 @@
         <li>Fecha de nacimiento: 06/11/1971</li>
     </ul>
   </h3>
-<!-- Requerimiento4: Enlaces de menú básico -->
+  <!-- Requerimiento4: Enlaces de menú básico -->
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -48,25 +48,68 @@
             <li><a href="Experiencia.html" target="_blank">Experiencia</a></li>
         </ul>
     </nav>
-<!-- Requerimiento5: Información Personal -->
-    <h2>Información personal</h2>
-    <img src="img/tower.jpg" title="Logo examen HTML" alt="sono io" width="5%">
+<!-- Requerimiento5: Incorpora un título en h2 Educación. -->
+    <h2>Educación</h2>
+<!--aca insertar una tabla con varias columnas -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>Año</th>
+            <th>Institución</th>
+            <th>Lugar</th>
+            <th>¿Culminó?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1995</td>
+            <td>Icaptel</td>
+            <td>La Paz</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>2012</td>
+            <td>Universidad Loyola</td>
+            <td>La Paz</td>
+            <td>Sí</td>
+        </tr>
 
-<!-- Requerimiento6: Perfil -->
-<p>Tecnico en telecomunicaciones y apacionado del manejo de herramientas de analisis geo espacial (GIS)</p>
-<ul>
-    <li>Planeamiento de redes móviles, lado de acceso (Cell Planning)</li>
-    <li>Análisis de datos de la red móvil en Sistemas de Información Geográfica (GIS)</li>
-    <li>Implementaxción de bases de datos con soporte espacial (En Oracle y PostGres)</li>
-    <li>Trabajo en equipo</li>
-    <li>Me gusta mucho enseñar y ayudar a mis colegas</li>
-    <li>Implementación de servicios web de mapas <a href="http://www.opengeospatial.org" target="_Blank">(WMS)</a></li>
-    <li>Otros</li>
-</ul>
+    </tbody>
+</table>
+<!-- Requerimiento7: Dibuja un Formulario titulado "Agregar Estudios" -->
+<form autocomplete="on" name="myFromAgregarEstudios">
+  <fieldset>
+    <legend><h2>Agregar estudios</h2></legend>
+    <label for="Año">Año:</label>
+    <select>
+      <option>2018</option>
+      <option>2017</option>
+      <option>2016</option>
+      <option>2015</option>
+      <option>2014</option>
+      <option>2013</option>
+      <option>2012</option>
+      <option>2011</option>
+      <option>2010</option>
+    </select></br></br>
+    <label for="Institución">Institución:</label>
+    <input type="text" placeholder="Ingrese la institución"></br></br>
+    <label for="Lugar">Lugar:</label>
+    <textarea name="area" rows="1" cols="100"></textarea></br></br>
+<p>
+  <label for="Culmino">Culmino: </label>
+  <input type="radio" name="Culmino" value="Si">Si
+  <input type="radio" name="Culmino" value="No">No
+</p>
+<p>
+  <input type="submit" value="Enviar">
+</p>
+</fieldset>
+</form>
 <!-- Requerimiento7: Pie de Página -->
 <footer>
     <div>
-        <h3>Información de contacto:</h3>
+        <h3>@ Derechos reservados</h3>
         <ul>
             <li>em: <a href="mailto:ellanquegeo@gmail.com">ellanquegeo@gmail.com</a></li>
             <li>M: +591.12345678</li>
